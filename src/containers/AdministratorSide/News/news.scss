@@ -1,0 +1,33 @@
+.news-page {
+
+  .create-news-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+
+    span {
+      color: #464646;
+      font-family: Roboto;
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 2.5px;
+    }
+
+    .btn {
+      height: 43px;
+      width: 184px;
+    }
+  }
+
+  .admin-table {
+    .actions {
+      display: flex;
+      justify-content: space-around;
+
+      .btn {
+        height: 29px;
+        width: 128px;
+      }
+    }
+  }
+}

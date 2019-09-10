@@ -1,0 +1,492 @@
+@import "styles/authenticationPages";
+
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+*:focus {
+  outline: none;
+}
+
+.size-container {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content {
+  flex: 1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #53BE4F;
+  color: #fff;
+  font-weight: 100;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  font-family: Roboto;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: #fff !important;
+  }
+}
+
+.btn:hover {
+  background: #41903d;
+  color: #fff !important;
+}
+
+.btn-red {
+  background-color: #D10A23;
+
+  &:hover {
+    background-color: rgba(175, 3, 44, 0.87) !important;
+  }
+}
+
+.btn-blue {
+  background-color: #4A90E2;
+
+  &:hover {
+    background-color: #3e70b6 !important;
+  }
+}
+
+.btn-white {
+  background: #fff;
+  color: #53BE4F;
+  border: 1px solid #53BE4F;
+
+  &:hover {
+    color: #53BE4F !important;
+    background: rgba(224, 224, 224, 0.5) !important;
+  }
+}
+
+
+.ant-switch {
+  height: 45px !important;
+  width: 101px;
+  background: rgba(191, 191, 191, 0.25) !important;
+
+  &:after {
+    width: 41px !important;
+    height: 41px !important;
+    background-color: #53BE4F !important;
+    border-radius: 50% !important;
+  }
+}
+
+.ant-switch-checked {
+  background: #53BE4F !important;
+
+  &:after {
+    background-color: #fff !important;
+  }
+}
+
+a:focus {
+  text-decoration: none !important;
+}
+
+.page-title {
+  margin: 0 0 30px 0;
+  color: #464646;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+}
+
+//------------------------------------
+//-------------ADMIN SIDE-------------
+//------------------------------------
+.admin-side {
+  height: 100%;
+  background: rgba(224, 224, 224, 0.5);
+
+  .container {
+    height: calc(100% - 57px);
+    display: flex;
+
+    .admin-content {
+      width: 85%;
+      height: 100%;
+      padding: 30px;
+      overflow: auto;
+
+
+      .section {
+        width: 100%;
+        padding: 30px 20px;
+        background: #fff;
+        border: 1px solid #DEDEDE;
+        border-radius: 2px;
+      }
+
+      .admin-table {
+        .title-table {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 0 20px 0;
+          color: #464646;
+          font-family: Roboto;
+          font-size: 25px;
+          font-weight: bold;
+          letter-spacing: 2.5px;
+
+          .btn {
+            min-width: 184px;
+            height: 43px;
+            padding: 0 30px;
+            color: #FFFFFF;
+            font-family: Roboto;
+            font-size: 15px;
+            letter-spacing: 1.5px;
+          }
+        }
+
+        .ant-table-thead > tr > th {
+          border: 0;
+          background: rgba(224, 224, 224, 0.5);
+          font-weight: bold;
+          color: #464646;
+          text-align: center;
+        }
+        .ant-table-tbody > tr > td {
+          border: 0;
+          text-align: center;
+        }
+
+        .anticon-right {
+          color: #57C053;
+        }
+      }
+    }
+  }
+
+  .admin-size-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+// ------------------------------------
+//-------------FORMS-----------------
+//------------------------------------
+.separate-form {
+  width: 60%;
+  position: relative;
+  max-width: 766px;
+  margin: 0 auto;
+  padding: 40px 10%;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 23px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+
+  .go-back-btn {
+    position: absolute;
+    left: 60px;
+    top: 45px;
+
+    color: #53BE4F;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+
+    i {
+      margin: 0 5px 0 0;
+    }
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .form-title {
+    width: 100%;
+    margin: 30px 0 35px 0;
+    display: flex;
+    align-items: center;
+
+    hr {
+      flex: 1;
+      border-bottom: 0 solid rgba(151, 151, 151, 0.56);
+    }
+
+    span {
+      margin: 0 15px;
+      color: #464646;
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+
+  .form-item {
+    margin: 0 0 15px 0;
+
+  }
+}
+
+li.ant-select-dropdown-menu-item-selected {
+  background-color: #53BE4F;
+  color: #fff;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin: 0 0 10px 0;
+    opacity: 0.9;
+    color: #464646;
+    font-family: Roboto;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+  }
+
+  input {
+    height: 47px;
+    padding: 0 20px;
+    border-radius: 23px;
+    border: 0;
+    background-color: rgba(191, 191, 191, 0.25);
+    font-size: 14px;
+  }
+
+  input::placeholder,
+  .ant-select-selection__placeholder {
+    color: #464646;
+    font-family: Roboto;
+    font-weight: normal;
+    opacity: .4;
+  }
+
+  .ant-select-selection--single {
+    height: 47px;
+    padding: 0 20px;
+    border-radius: 23px;
+    border: 0;
+    background-color: rgba(191, 191, 191, 0.25);
+    font-size: 14px;
+
+    input {
+      padding: 0;
+    }
+  }
+
+  .ant-cascader-picker-arrow,
+  .ant-select-arrow-icon {
+    color: #53BE4F;
+  }
+
+  .ant-select-selection__rendered {
+    height: 100%;
+    margin: 0;
+  }
+
+  .ant-select-open .ant-select-selection {
+    box-shadow: none;
+  }
+
+  .ant-select-selection-selected-value {
+    height: 100%;
+    line-height: 47px;
+  }
+
+  .ant-select-selection:focus {
+    box-shadow: none;
+  }
+  .ant-input:focus {
+    box-shadow: none;
+  }
+  .ant-calendar-picker:focus .ant-calendar-picker-input:not(.ant-input-disabled) {
+    border-color: #DEDEDE;
+    box-shadow: none;
+  }
+  &.checkbox {
+    flex-direction: row;
+    align-items: center;
+
+    label {
+      margin: 0 0 0 20px !important;
+      cursor: pointer;
+    }
+
+    input {
+      cursor: pointer;
+    }
+  }
+}
+
+//------------------------------------
+//-----------USER TABLE---------------
+//------------------------------------
+.user-table {
+  box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+
+  .table-title {
+    height: 85px;
+    padding: 0 0 0 25px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+    color: #464646;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+  }
+
+  .ant-table-thead th {
+    background: rgba(224, 224, 224, 0.5);
+    color: #464646;
+    font-family: Roboto;
+    padding: 16px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+
+    &:first-child {
+      border-top-left-radius: 0 !important;
+    }
+
+    &:last-child {
+      border-top-right-radius: 0 !important;
+    }
+
+    i.on {
+      color: #53BE4F !important;
+    }
+  }
+
+  .ant-table-tbody {
+
+    tr {
+      td {
+        padding: 10px 10px;
+        color: #464646;
+        font-family: Roboto;
+        font-size: 12px;
+        letter-spacing: 1.4px;
+      }
+    }
+
+    tr:hover {
+      td {
+        background: #53BE4F !important;
+        color: #fff;
+
+      }
+    }
+
+    tr:last-child {
+      td {
+        border-bottom: 0;
+      }
+    }
+
+    i.anticon-right {
+      color: #53BE4F;
+      font-size: 16px;
+    }
+
+    i.anticon-arrow-right {
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+
+  .table-action-btn {
+    display: flex;
+
+    .btn {
+      margin: 0 10px;
+      padding: 5px 15px;
+    }
+
+    .done {
+      background: #4A90E2;
+    }
+    .cancel {
+      background: #D10A23;
+    }
+  }
+}
+
+//------------------------------------
+//-----------DIALOG WINDOW------------
+//------------------------------------
+
+.ant-modal-mask {
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(255, 255, 255, 0.81) !important;
+}
+
+.ant-modal-content {
+  .ant-modal-close-icon {
+    color: #53BE4F !important;
+    font-size: 20px;
+  }
+
+  .ant-modal-body {
+    padding: 30px 45px;
+  }
+}
+
+.ant-popover-inner-content {
+  padding: 0 !important;
+
+  div {
+    padding: 5px 10px;
+    color: #464646;
+    font-family: Roboto;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+  }
+}
+
+@media (max-width: 800px) {
+  .separate-form {
+    width: 100%;
+
+    .go-back-btn {
+      left: 15px;
+    }
+  }
+}

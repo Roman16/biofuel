@@ -1,0 +1,45 @@
+//------------------------------------
+//-------------FOOTER-----------------
+//------------------------------------
+footer {
+  height: 163px;
+  background: #4B4B4B;
+
+  .footer {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 20px;
+
+    nav {
+      margin: 0 0 0 40px;
+      a {
+        margin: 0 30px 0 0;
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 12px;
+        letter-spacing: 1.2px;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    .footer {
+      flex-direction: column;
+      padding: 20px;
+
+      nav {
+        column-count: 2;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>неоплачені ico</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="83.1054962%" y1="14.1833419%" x2="31.4875233%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF5F84" offset="0%"></stop>
+            <stop stop-color="#D0021B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="неоплачені-ico" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="003-stop" transform="translate(1.000000, 1.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M10.9196667,0 C4.89866667,0 0,4.89833333 0,10.9196667 C0,16.941 4.89833333,21.8393333 10.9196667,21.8393333 C16.941,21.8393333 21.8393333,16.941 21.8393333,10.9196667 C21.8393333,4.89833333 16.9406667,0 10.9196667,0 Z M2,10.9196667 C2,6.00133333 6.00133333,2 10.9196667,2 C13.1356667,2 15.1643333,2.81433333 16.726,4.15733333 L4.15733333,16.726 C2.81433333,15.1643333 2,13.1356667 2,10.9196667 Z M10.9196667,19.8393333 C8.937,19.8393333 7.104,19.1883333 5.62133333,18.09 L18.0896667,5.62166667 C19.188,7.10433333 19.839,8.93733333 19.839,10.92 C19.8393333,15.838 15.838,19.8393333 10.9196667,19.8393333 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+.accounts-page {
+
+  .total-block {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      width: 48%;
+      height: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 125px 0 25px;
+      border-radius: 15px;
+      box-shadow: 0 3px 23px 0 rgba(0, 0, 0, 0.19);
+
+      .title {
+        color: #464646;
+        font-family: Roboto;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+      }
+
+      .value {
+        color: #464646;
+        font-family: Roboto;
+        font-size: 25px;
+        letter-spacing: 2.5px;
+      }
+    }
+  }
+
+  .unpaid-accounts {
+    margin: 0 0 30px 0;
+
+    .btn {
+      height: 30px;
+      padding: 0 15px;
+    }
+  }
+}

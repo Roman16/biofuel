@@ -1,0 +1,95 @@
+.dashboard-page {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-areas: "siteStatistics accountsStatistics" "contractsStatistics contractsStatistics";
+
+  .block-title {
+    color: #464646;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    text-align: center;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid #DEDEDE;
+  }
+
+  .site-statistics {
+    grid-area: siteStatistics;
+
+    .all-info {
+      display: flex;
+      justify-content: space-around;
+      margin: 35px 0 0 0;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        label {
+          color: #464646;
+          font-family: Roboto;
+          font-size: 15px;
+          letter-spacing: 1.25px;
+          margin: 20px 0 25px 0;
+        }
+
+        .value {
+          color: #464646;
+          font-family: Roboto;
+          font-size: 30px;
+          font-weight: bold;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+
+  .accounts-statistics {
+    grid-area: accountsStatistics;
+
+    .params-item {
+      display: flex;
+      align-items: center;
+      margin: 20px 0 0 0;
+      padding: 0 0 0 30px;
+
+      label {
+        margin: 0 0 0 20px;
+        color: #464646;
+        font-family: Roboto;
+        font-size: 15px;
+        letter-spacing: 1.25px;
+      }
+
+      .value {
+        width: 30%;
+        display: block;
+        text-align: center;
+        margin: 0 20px 0 auto;
+        font-family: Roboto;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 2.5px;
+
+        &.red {
+          color: #D40923;
+        }
+        &.green {
+          color: #57C053;
+        }
+        &.orange {
+          color: #F5A623;
+        }
+      }
+    }
+  }
+
+  .contracts-statistics {
+    grid-area: contractsStatistics;
+  }
+
+}

@@ -1,0 +1,254 @@
+.profile-page {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  grid-template-areas: "shortInfo twoFactor" "shortInfo changePass" "userInfo userInfo" "documents documents";
+
+  .section {
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 3px 23px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .short-information-block {
+    grid-area: shortInfo;
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      padding: 0 0 15px 0;
+      margin: 0 0 15px 0;
+      border-bottom: 1px solid rgba(151, 151, 151, 0.56);
+
+      .user-avatar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 5% 0 0;
+
+        .rating {
+          display: flex;
+          margin: 10px 0 0 0;
+          color: #464646;
+          font-family: Roboto;
+          font-size: 15px;
+          letter-spacing: 1.5px;
+
+          img {
+            width: 14px;
+            height: 14px;
+            margin: 1px 5px 0 0;
+          }
+        }
+      }
+
+      .user-status {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        margin: 0 0 15px 0;
+
+        .user-name {
+          font-family: Roboto;
+          font-size: 25px;
+          font-weight: bold;
+          letter-spacing: 2.5px;
+        }
+
+        .verification-status {
+          height: 20px;
+          margin: 0 0 0 10px;
+          border-radius: 4px;
+          background-color: #00CE7D;
+          color: #fff;
+          padding: 1px 5px;
+          font-size: 12px;
+          font-weight: 100;
+          letter-spacing: 1px;
+        }
+
+        .logout {
+          position: absolute;
+          left: 0;
+          top: -20px;
+          cursor: pointer;
+          color: #53BE4F;
+          font-family: Roboto;
+          font-size: 12px;
+          letter-spacing: 1.2px;
+        }
+      }
+    }
+
+    .login-history {
+      .block-title {
+        color: #464646;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 1.8px;
+      }
+    }
+  }
+  //---------------------------------------------------
+  //---------------------------------------------------
+  .two-factor-block {
+    grid-area: twoFactor;
+
+    .title-block {
+      margin: 0 0 50px 0;
+      color: #464646;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1.8px;
+
+      img {
+        margin: 0 25px 0 0;
+      }
+    }
+
+    .switch-block {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 0 55px;
+      color: #464646;
+      font-family: Roboto;
+      font-size: 15px;
+      letter-spacing: 1.25px;
+
+    }
+  }
+  //---------------------------------------------------
+  //---------------------------------------------------
+  .change-password-page {
+    grid-area: changePass;
+    display: flex;
+    align-items: center;
+
+    img {
+      margin: 0 25px 0 0;
+    }
+
+    span {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1.8px;
+    }
+
+    button {
+      height: 43px;
+      width: 184px;
+      margin: 0 0 0 auto;
+    }
+  }
+  //---------------------------------------------------
+  //---------------------------------------------------
+  .user-information-block {
+    grid-area: userInfo;
+    display: flex;
+    justify-content: space-between;
+
+    & > div {
+      flex: 1;
+      padding: 0 5%;
+
+      &:first-child {
+        padding-left: 0;
+        border-right: 1px solid rgba(151, 151, 151, 0.56);
+      }
+      &:last-child {
+        padding-right: 0;
+        border-left: 1px solid rgba(151, 151, 151, 0.56);
+      }
+
+    }
+
+    .block-title {
+      margin: 0 0 30px 0;
+      color: #464646;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1.8px;
+    }
+
+    .form-item {
+      margin: 0 0 13px 0;
+    }
+  }
+  //---------------------------------------------------
+  //---------------------------------------------------
+  .documents {
+    grid-area: documents;
+
+    .block-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 30px;
+      color: #464646;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 1.8px;
+
+      .btn {
+        height: 43px;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 0 30px;
+      }
+    }
+
+    .documents-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .document {
+        width: 26%;
+
+        .default-img {
+          height: 180px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 19px;
+          background: #EFEFEF;
+          margin: 10px 0 40px 0;
+          overflow: hidden;
+        }
+
+        i {
+          font-size: 100px;
+          color: #c3c3c3;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .profile-page {
+    grid-template-areas: "shortInfo shortInfo" "twoFactor twoFactor" "changePass changePass" "userInfo userInfo";
+
+    .user-information-block {
+      flex-direction: column;
+
+      & > div {
+        padding: 0;
+        margin: 0 0 30px 0;
+        border: 0 !important;
+      }
+
+    }
+  }
+}
